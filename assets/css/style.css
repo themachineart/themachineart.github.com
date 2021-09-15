@@ -1,0 +1,35 @@
+
+
+.title.is-0 {
+  font-size: 5rem;
+}
+
+.card-image > .price {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: 20px;;
+}
+
+/* ==========================
+===== Lazy loading of images 
+=============================*/
+
+.lazy {
+    transition: opacity 1s linear;
+    opacity: 0;
+  }
+  
+  .lazy--placeholder {
+    filter: blur(50px);
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .lazy--loaded {
+    opacity: 1;
+  }
+
+.modal-background {
+  background-color: rgba(10, 10, 10, 1);
+}
