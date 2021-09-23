@@ -11,6 +11,10 @@
   margin-left: 20px;;
 }
 
+.mt-n6 {
+  margin-top: -6rem !important;
+}
+
 /* ==========================
 ===== Lazy loading of images 
 =============================*/
