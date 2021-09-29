@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     let twText = new Array(
       "It can't be bargained with. ",
-      "Tt can't be reasoned with. ",
+      "It can't be reasoned with. ",
       "It doesn't feel pity, or remorse, or fear. ",
       "And it absolutely will not stop... ",
       "creating art."
