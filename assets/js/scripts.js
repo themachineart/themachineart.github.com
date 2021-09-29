@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (twIndex != twText.length) {
           
           // Get the length of the array item string
-          twTextLength = twText[index].length;
+          twTextLength = twText[twIndex].length;
           
           // Wait a little bit between sentences
           setTimeout(typewriter(), 700);
