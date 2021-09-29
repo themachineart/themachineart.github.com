@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         twIndex++;
         
         // Check if we've got more text to output
-        if (index != twText.length {
+        if (index != twText.length) {
           
           // Get the length of the array item string
           twTextLength = twText[index].length;
