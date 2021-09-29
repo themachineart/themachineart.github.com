@@ -6,73 +6,67 @@ document.addEventListener("DOMContentLoaded", function () {
     // ==================================
     
     let twText = new Array(
-        "It can't be reasoned with, it can't be bargained with. ",
-        "It doesn't feel pity or remorse or fear. ",
-        "And it absolutely will not stop... ",
-        "creating art."
+      "It can't be reasoned with, it can't be bargained with. ",
+      "It doesn't feel pity or remorse or fear. ",
+      "And it absolutely will not stop... ",
+      "creating art."
     );
-    
 
     let twTextLength = twText[0].length;
     let twScrollUpAt = 20;
     let twSpeed = 50;
     let twIndex = 0;
-    
+
     let twStartPosition = 0;
-    let twContents = '';
+    let twContents = "";
     let twRow;
-    
+
     function typewriter() {
-      
       // Init the content
-      twContents = ' ';
-      
+      twContents = " ";
+
       // Determine the row
       twRow = Math.max(0, twIndex - twScrollUpAt);
-      
+
       // Get the element
       let element = document.getElementById("typewrite");
-      
+
       // Get out of here if it's null
-      if (element == null)
-        return;
-      
+      if (element == null) return;
+
       // Loop until we're done
       while (twRow < twIndex) {
         twContents += twText[twRow++];
       }
-      
+
       // Update the html element with the text
-      element.innerHTML = twContents + twText[twIndex].substring(0, twStartPosition);
-      
+      element.innerHTML =
+        twContents + twText[twIndex].substring(0, twStartPosition);
+
       // Is the next character the end of the sentence?
       if (twStartPosition++ == twTextLength) {
-        
         // Reset the start position
         twStartPosition = 0;
-        
+
         // Update the index
         twIndex++;
-        
+
         // Check if we've got more text to output
         if (twIndex != twText.length) {
-          
           // Get the length of the array item string
           twTextLength = twText[twIndex].length;
-          
+
           // Wait a little bit between sentences
-          setTimeout(typewriter(), 700);
-        }      
-      }
-      else {
-        
+          setTimeout("typewriter()", 700);
+        }
+      } else {
         // Output the characters of the sentence
-        setTimeout(typewriter(), twSpeed);
+        setTimeout("typewriter()", twSpeed);
       }
     }
-    
-    typewriter();
 
+    typewriter();
+    
     // ==============================================================
     // ===== Lazy loading intersection observer and fallback methods
     // ==============================================================
