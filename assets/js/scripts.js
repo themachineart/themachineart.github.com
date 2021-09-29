@@ -6,15 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // ==================================
     
     let twText = new Array(
-      "It can't be reasoned with, it can't be bargained with. ",
-      "It doesn't feel pity or remorse or fear. ",
+      "Tt can't be bargained with. ",
+      "Tt can't be reasoned with. ",
+      "It doesn't feel pity, or remorse, or fear. ",
       "And it absolutely will not stop... ",
       "creating art."
     );
 
     let twTextLength = twText[0].length;
     let twScrollUpAt = 20;
-    let twSpeed = 50;
+    let twSpeed = 40;
     let twIndex = 0;
 
     let twStartPosition = 0;
