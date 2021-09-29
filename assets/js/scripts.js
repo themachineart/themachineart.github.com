@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
           twTextLength = twText[twIndex].length;
 
           // Wait a little bit between sentences
-          setTimeout(typewriter, 700);
+          setTimeout(typewriter, 500);
         }
       } else {
         // Output the characters of the sentence
