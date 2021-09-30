@@ -206,7 +206,9 @@ document.addEventListener("DOMContentLoaded", function () {
         imageLarge.classList.add("lazy--loaded");
         
         // Get rid of the placeholder
-        parent.removeChild(image);
+        if (parent.contains(image)) {
+          parent.removeChild(image);
+        }          
       };
   
       // Add it to the document
