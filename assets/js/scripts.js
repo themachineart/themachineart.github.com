@@ -190,10 +190,10 @@ document.addEventListener("DOMContentLoaded", function () {
         imageLarge.srcset = image.dataset.srcset;
       }
       
-      if (image.dataset.alt != null)
+      if (image.alt != null)
       {
         // Get the alt description for the large image
-        imageLarge.alt = image.dataset.alt;
+        imageLarge.alt = image.alt;
       }
       
       // Add class to make it's default opacity 0
